@@ -1,0 +1,1 @@
+alert tcp any any -> $HOME_NET any (msg: "CrowdStrike CSA-211099 Log4Shell RCE Attempt (CVE-2021-44228) [CSA-211099]"; flow: from_client, established; content: "${jndi:ldap://"; classtype:web-application-attack; sid:8001895; rev:20211210; reference: url,falcon.crowdstrike.com/intelligence/reports/CSA-211099;)
